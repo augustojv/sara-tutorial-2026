@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Tutorial on Agile Design of Secure and Resilient AI-Centric Systems</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body data-spy="scroll" data-target="#site-nav">
+    <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
+        <div class="container">
+            <div class="navbar-header">
+
+                <!-- logo -->
+                <div class="site-branding">
+                    <a class="logo" href="index.html">
+                        
+                        <!-- logo image  -->
+                        <!-- <img src="assets/images/logo.png" alt="Logo"> -->
+                        SARA
+                    </a>
+                </div>
+
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div><!-- /.navbar-header -->
+
+            <div class="collapse navbar-collapse" id="navbar-items">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <!-- navigation menu -->
+                    <!--<li><a data-scroll href="#speakers">Speakers</a></li>-->
+                    <li><a data-scroll href="#program">Program</a></li>
+                    <li><a data-scroll href="#org">Organizers</a></li>
+                
+                </ul>
+            </div>
+        </div><!-- /.container -->
+    </nav>
+
+    <header id="site-header" class="site-header valign-center"> 
+        <div class="intro">
+
+            <p>June 22<sup>nd</sup> 2025, Tokyo, Japan</p>
+
+			<br>
+			
+            <h1 style="color: #FDFA29">SARA 2025</h1>            
+            <h1 style="color: #FDFA29">Tutorial on Agile Design of<br>Secure and Resilient AI-Centric Systems</h1>
+
+			<br><br>
+
+            <a class="btn btn-white" data-scroll href="#registration">Register Now</a>
+        
+        </div>
+    </header>
+
+    <section id="call" class="section call for papers">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+
+                    <h3 class="section-title multiple-title">About</h3>
+
+                    <p>
+						Recent advances in AI systems (software and hardware) have resulted in an unprecedented growth in demand for AI-infused computational
+						models across a very broad range of application domains. Predictably, challenges in efficiency, reliability, security (including privacy),
+						trustworthiness and safety (of AI systems) have emerged concurrently as major themes of R&D. Closely tied to the challenge of energy
+						efficiency is the issue of sustainable cost, as evidenced by the recent sensation caused by the emergence of DeepSeek AI. Agile co-design
+						of hardware and software for AI is a key element of efficiency enhancement and the drive towards sustainable AI compute. To this end, this
+						tutorial will focus on agile design of secure and resilient AI (SARA) systems. 
+						<br>
+						Our methodology builds on prior work on agile domain-specific system-on-chip (DSSoC) design during the 5-year EPOCHS project led by IBM
+						(DARPA-sponsored, with Columbia University participating as one of the key university partners).  At the core of the EPOCHS project is
+						ESP, an open-source platform for heterogeneous SoC design from Columbia University. By combining a scalable, modular, tile-based architecture
+						with a flexible system-level design methodology, ESP simplifies the design of individual accelerators and automates their hardware/software
+						integration into complete SoCs. This tutorial will begin with a hands-on introduction to ESP. We will detail how ESP was used to successfully
+						design two complex heterogeneous SoCs during the EPOCHS project and also demonstrate the software stack that runs on our hardware
+						prototypes. The novel distributed hardware power management architecture will also be covered, detailing the pre-silicon modeling and
+						design challenges.
+				    </p>
+					
+                </div><!-- /.col-sm-6 -->
+
+                <div class="col-sm-6">
+
+					<p>
+						In the second part of the tutorial, we will pivot to the SARA application domain, detailing key challenges in “efficient resilience” such as
+						side channel attack mitigation  and data security, as well as data integrity or inferential accuracy shortfalls under low power constraints. 
+						We will then present our ongoing work to design large systems (e.g. design proposals from IBM or other recent FHE hardware
+						accelerator papers published at top-tier architecture conference) that have support for data-secure AI. This work includes enhancements to ESP
+						to make its NoC-based infrastructure more flexible and performant, which is critical for these complex applications. We will also present the
+						software stack that enables the deployment of SARA workloads across multiple accelerator instances; this includes both privacy-preserving
+						computing, as well as plaintext inference with CNN and Transformer networks. We will wrap up by presenting a vision for future SARA
+						systems-in-package (SiPs) that are composed of multiple chiplets.
+					</p>
+
+                    <h3 class="section-title multiple-title">Organizers</h3>
+
+                    <p>
+					<ul class="list-arrow-right">
+						<li>Luca Carloni, Columbia University</li>
+						<li>Joseph Zuckerman, Columbia University</li>
+						<li>Pradip Bose, IBM Research</li>
+						<li>Nandhini Chandramoorthy, IBM Research</li>
+						<li>Augusto Vega, IBM Research</li>
+					</ul>
+                    </p>
+					
+
+                </div><!-- /.col-sm-6 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section>
+
+    <section id="important" class="section bg-image-1 facts text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+					
+                </div>
+                <div class="col-sm-4">
+
+                    <i class="ion-ios-calendar"></i>
+                    <h3>Tutorial Date<br>June 22<sup>nd</sup>, 2025</h3>
+                
+                </div>
+                <div class="col-sm-4">
+                
+                </div>
+            </div><!-- row -->
+        </div><!-- container -->
+    </section>
+
+<!--
+    <section id="speakers" class="section speakers">
+        <div class="container">
+			
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Invited Speakers:</h3>    
+                </div>
+            </div>
+
+			<em>Coming soon!</em>
+-->
+	
+<!--
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="speaker">
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/natalia_vassilieva.jpg" style="border-radius:50%">
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="col-sm-10">
+					<h3>Training Large Language Models on Cerebras Wafer Scale Clusters</h3>
+					<h4><a href="https://www.linkedin.com/in/nataliavassilieva" target="_blank">Natalia Vassilieva
+						(Sr. Director of Product, Machine Learning - Cerebras Systems)</a></h4>
+					<p>
+						Large Language Models (LLMs) are shifting “what’s possible”, but require massive compute and massive complexity of distributed training
+						across thousands of accelerators with traditional hardware. Cerebras Wafer Scale Clusters make training LLMs faster and easier compared
+						to GPUs due to near-perfect linear scaling and simple data-parallel distribution strategy for models of any size. In this talk we will
+						share our experience and insights from training various LLMs, including open-sourced family of Cerebras-GPT models, on the Cerebras hardware.
+          	  		</p> 
+				</div>
+            </div>
+			
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="speaker">
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/suvinay_subramanian.jpg" style="border-radius:50%">
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="col-sm-10">
+					<h3>Codesigning Computing Systems for Artificial Intelligence</h3>
+					<h4><a href="https://www.linkedin.com/in/suvinay-subramanian-53163b20a/" target="_blank">Suvinay Subramanian
+						(Staff Software Engineer - Google)</a></h4>
+					<p>
+						The rapid advancement of artificial intelligence (AI) has ushered in an era of unprecedented computational demands, necessitating continuous
+						innovation in computing systems. In this talk, we will highlight how codesign has been a key paradigm in enabling innovative solutions and
+						state-of-the-art performance in Google's AI computing systems, namely Tensor Processing Units (TPUs). We present several codesign case studies
+						across different layers of the stack, spanning hardware, systems, software, algorithms, all the way up to the datacenter. We discuss how TPUs
+						have made judicious, yet opinionated bets in our design choices, and how these design choices have not only kept pace with the blistering rate
+						of change, but also enabled many of the breakthroughs in AI.
+          	  		</p> 
+				</div>
+            </div>
+			
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="speaker">
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/carlos_costa.jpg" style="border-radius:50%">
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="col-sm-10">
+					<h3>Building a Cloud-Native Platform for the Future of AI: Foundation Models</h3>
+					<h4><a href="https://www.linkedin.com/in/carlos-h-a-costa-9b9b1a1/" target="_blank">Carlos Costa
+						(Principal Research Staff Member - IBM)</a></h4>
+					<p>
+						Foundation Model is an emerging inflection point in the creation of powerful, very high dimensional data representations, triggered by advances
+						in AI. Foundation Models in AI are billion-parameter-scale neural networks, powered by novel architectures which are trained using a technique
+						called self-supervision. This new paradigm imposes unprecedented opportunities and challenges across the full computing stack. Hear how IBM Research
+						is expanding and realizing the value of Foundation Models, from building a cloud-native supercomputing infrastructure and a simplified, cloud-native
+						common stack to train and deploy Foundation Models in an multicloud environment, to applying this full stack to enable advances in natural language
+						domain and beyond, including time series and code generation. 
+          	  		</p> 
+				</div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="speaker">
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/tushar_krishna.jpg" style="border-radius:50%">
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="col-sm-10">
+					<h3>Modeling and Mitigating Communication Bottlenecks for Large Model Training at Scale</h3>
+					<h4><a href="https://www.linkedin.com/in/tushar-krishna-a60b0970/" target="_blank">Tushar Krishna
+						(Associate Professor - Georgia Institute of Technology)</a></h4>
+					<p>
+						The unprecedented success of large language models (LLMs) &mdash; such as Open AI's GPT-3 and GPT-4, Google's Bard, Meta's LLaMa , Cerebras-GPT and
+						others &mdash; is emphasizing the ever-growing demand to efficiently train them. These models leverage billions to trillions of model parameters and
+						this trend continues to increase at an unforeseen rate. The large model size makes it impossible for their parameters to fit within a single accelerator
+						device, whose memory is usually capped at tens of GBs. Furthermore, even if we succeed to fit the model into a single device, their tremendous compute
+						requirement leads to almost impractical training time. For example, GPT-3 consists of 175B parameters and takes 355 GPU-years to train with a single
+						NVIDIA V100 GPU. This has led to a growing interest in distributed training, which is the idea of sharding model weights and/or data samples across
+						multiple accelerator devices. However, this comes at the expense of communication overhead to exchange gradients and activations, and it has already
+						become a key bottleneck for distributed training. We identify that the communication challenge will get exacerbated in future systems that are expected
+						to leverage multi-dimensional networks with heterogeneous bandwidths due to diverse fabric technologies (e.g., chiplets, rack-scale, and scaleout).
+						We present our recent works on <em>(i)</em> modeling future training platforms to identify such bottlenecks, and <em>(ii)</em> a novel runtime scheduling
+						policy to enhance network bandwidth utilization.
+          	  		</p> 
+				</div>
+            </div>
+-->
+		</div>
+    </section>
+
+    <section id="program" class="section schedule">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Program:</h3>
+                    <p>
+                    <table class="table table-hover">
+                      <thead class="thead-light">
+                        <tr>
+                          <th colspan=2 scope="col">Sunday June 22<sup>nd</sup>, 2025<br><em>(all times are Japan Standard Time)</em></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row" class="col-md-3">8:00 - 8:30 AM</th>
+                          <td><strong>Tutorial Introduction</strong><br>Pradip Bose (IBM Research)</td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="col-md-3">8:30 - 9:15 AM</th>
+                          <td><strong>Embedded Scalable Platforms (ESP): A Mini Tutorial</strong><br>Luca Carloni (Columbia University)</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">9:15 - 10:00 AM</th>
+                          <td><strong>Use of ESP to design SoCs for Connected Autonomous Vehicles (CAVs)</strong><br>
+							  Joseph Zuckerman (Columbia University) &amp; Karthik Swaminathan (IBM Research)</td>
+                        </tr>
+                        <tr bgcolor="#FEF9E7">
+                          <th scope="row">10:00 - 10:30 AM</th>
+                          <td><i>Coffee Break</i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">10:30 - 11:30 AM</th>
+                          <td><strong>Introduction to FHE Algorithms and Architectures</strong><br>Charanjit Jutla (IBM Research)</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">11:30 - 12:00 PM</th>
+                          <td><strong>FHETCH Consortium + Niobium’s FHE Accelerator</strong><br>David Archer (Niobium)</td>
+                        </tr>
+                        <tr bgcolor="#FEF9E7">
+                          <th scope="row">12:00 - 1:00 PM</th>
+                          <td><i>Lunch Break</i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">1:00 - 1:30 PM</th>
+                          <td><strong>Security and Resilience Challenges in AI-Centric Systems</strong><br>Naorin Hossain, Karthik Swaminathan, Pradip Bose (IBM Research)</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">1:30 - 2:00 PM</th>
+                          <td><strong>IBM’s SARA SoC/SiP Project: Application-Driven High Level View</strong><br>Pradip Bose &amp; Karthik Swaminathan (IBM Research)</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2:00 - 2:30 PM</th>
+                          <td><strong>Use of ESP (With Enhancements) in SARA Project – With Progress Towards Multi-SoC (SiP)</strong><br>Joseph Zuckerman (Columbia University)</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2:30 - 3:00 PM</th>
+                          <td><strong>HELayers Driven Software Stack for AI/FHE Appliances</strong><br>Omri Soceanu (IBM Research, Israel)</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3:00 PM</th>
+                          <td><strong>End of SARA Tutorial</strong> (see you next year!)</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="org" class="section registration">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Organizers</h3>
+                </div>
+				
+                <div class="col-md-4">
+					
+                <p>
+                <b><a href="https://www.linkedin.com/in/luca-carloni-23289b5/" rel="nofollow" target="_blank">Luca Carloni
+				</a> </b>is professor and chair of Computer Science at Columbia University in the City of New York.  He holds a Laurea Degree
+				Summa cum Laude in Electronics Engineering from the University of Bologna, Italy, and the M.S and Ph.D degrees in Electrical
+				Engineering and Computer Sciences from the University of California, Berkeley.  His research interests include heterogeneous
+				computing, system-on-chip platforms, embedded systems, and open-source hardware. He is an IEEE Fellow.
+                </p>
+                <p>
+                <b><a href="https://www.linkedin.com/in/jzuck96/" rel="nofollow" target="_blank">Joseph
+				Zuckerman </a> </b>is a Computer Science Ph.D candidate at Columbia University, working in the System-Level Design group. His
+				research interests include agile design methodologies, novel architectures, and runtime optimization of heterogeneous
+				systems-on-chip. Joseph currently leads the development of ESP.
+                </p>
+                <p>
+                <b><a href="https://www.linkedin.com/in/pradip-bose-6b18a016/" rel="nofollow" target="_blank">Pradip 
+                Bose</a> </b>is a Distinguished Research Scientist and manager of <i>Efficient and Resilient Systems</i> at IBM T. J. 
+                Watson Research Center. He has over thirty-three years of experience at IBM, and was a member of the pioneering RISC super 
+                scalar project at IBM (a pre-cursor to the first RS/6000 system product). He holds a Ph.D. degree from University of Illinois 
+                at Urbana-Champaign.
+                </p>
+
+				</div>				
+                <div class="col-md-4">
+					
+                <p>
+                <b><a href="https://www.linkedin.com/in/nandhini-chandramoorthy-9b1a8ba7/" rel="nofollow" target="_blank">Nandhini Chandramoorthy
+				</a> </b>is a Staff Research Scientist at IBM T. J. Watson Research Center, working in the Dept. of Efficient and Resilient Systems.
+				She holds M.S & Ph.D degrees in EE/CS from Penn State University. Her research interests include: efficient and resilient AI
+				systems, privacy-protected computation and associated modeling methodologies.
+                </p>
+                <p>
+                <b><a href="https://www.linkedin.com/in/augusto-vega-5940684" rel="nofollow" target="_blank">Augusto Vega</a> </b>is a 
+                Senior Research Scientist at IBM T. J. Watson Research Center involved in research and development work in the areas of 
+                highly-reliable power-efficient embedded designs, cognitive systems and mobile computing. He holds a Ph.D. degree from 
+                Polytechnic University of Catalonia (UPC), Spain.
+                </p>
+                </div>
+                <div id="contact" class="col-md-4">
+                    <h4 class="section-title">Contact</h4>
+                    <ul class="list-arrow-right">
+                    <li><a href="mailto:info@sara-tutorial.org">info@sara-tutorial.org</a></li> 
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="links" class="section bg-image-2 facts ">
+        <div class="container">
+            <div class="row">
+				<div class="col-md-12">
+                    <h3 class="section-title">Interesting Links</h3>
+                </div>
+				<div class="col-md-6">
+                    <p>The <a href="https://www.esp.cs.columbia.edu" target="_blank">ESP</a> open-source SoC platform</p>
+                </div>
+				<div class="col-md-6">
+                    <p>The <a href="https://youtu.be/RlZDzqPSvI0" target="_blank">EPOCHS</a> demo</p>
+                </div>
+          </div>
+        </div>
+    </section>
+
+
+    <section id="location" class="section location">
+        <div class="container">
+            <div class="row">
+			
+				<div id="registration" class="col-md-3">
+                    <h3 class="section-title">Registration</h3>
+
+                    <p>
+                    SARA will be held in conjunction with the <b><a href="https://iscaconf.org/isca2025/"  target="_blank">
+					52<sup>nd</sup> International Symposium on Computer Architecture (ISCA 2025)</a></b>.
+                    Refer to the main venue to continue with the registration process.
+                    </p>
+                </div>
+
+
+                <div class="col-sm-3">
+                    <h3 class="section-title">Event Location</h3>
+                    <address>
+					  <p>Waseda University<br>
+                      Tokyo, Japan</p>
+                    </address>
+                    
+                    <p><b><a href="https://iscaconf.org/isca2025/" target="_blank"> Check main venue site for more information.</a></b></p>
+
+                </div>
+                <div class="col-sm-6">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.710812459427!2d139.7196485!3d35.7087334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d1a4869b805%3A0x11e214c5de0808a8!2sWaseda%20University!5e0!3m2!1sen!2sus!4v1740951872046!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="site-footer facts">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="site-info">Share this event on your social networks</p>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://twitter.com/home?status=Check%20out%20the%20Workshop%20on%20Cognitive%20Architectures%0Ahttps%3A//sara-tutorial.org"><i class="ion-social-twitter"></i>&nbsp; Twitter</a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//sara-tutorial.org/"><i class="ion-social-facebook"></i>&nbsp; Facebook</a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//sara-tutorial.org/&title=Workshop%20on%20Cognitive%20Architectures&summary=&source="><i class="ion-social-linkedin-outline"></i>&nbsp; LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
