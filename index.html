@@ -362,10 +362,8 @@
 	        </p>
 
 	        <p>
-	          This introductory presentation provides a brief overview of
-	          modern AI hardware and accelerator design, and introduces
-	          IBM's latest AI-centric systems, including the Spyre AI
-	          accelerator and AI-enabled mainframe technologies.
+			  The tutorial begins with a brief introduction to modern AI hardware fundamentals and a pointer to IBM’s
+			  robust AI-embedded mainframe processor and offload Spyre AI accelerator.
 	        </p>
 	      </div>
 	    </div>
@@ -380,14 +378,12 @@
 	        </p>
 
 	        <p>
-	          This segment begins with the motivation behind AI safety,
-	          security, reliability, and energy efficiency. It then discusses
-	          key challenges in the design of trustworthy AI hardware and
-	          presents experiences from two recent AI-centric SoC projects
-	          supported through U.S. government programs. The lecture also
-	          introduces the agile SoC-design methodology enabled by the
-	          open-source ESP platform, which is explored in greater depth
-	          during the following hands-on session.
+			  This segment of the tutorial begins with the motivational background on AI safety, security and energy
+			  efficiency. This is followed by a summary overview of the key challenges of providing reliability and
+			  security enhancements to AI-centric hardware. The lecture concludes with a summary of experiences drawn
+			  from two recent AI-centric SoC designs, supported by U.S. government funding. The low-cost agile SoC
+			  development was made possible using Columbia University’s open-source ESP platform which is elaborated
+			  upon in the next lecture.
 	        </p>
 	      </div>
 	    </div>
@@ -403,19 +399,9 @@
 	        </p>
 
 	        <p>
-	          This tutorial introduces the architecture, methodology, and
-	          software stack of ESP (Embedded Scalable Platforms), an
-	          open-source framework for agile heterogeneous SoC design.
-	          The session includes a live demonstration of the ESP flow,
-	          making it suitable both for newcomers seeking an introduction
-	          and experienced users looking for a refresher.
-	        </p>
-
-	        <p class="mb-0">
-	          <strong>Website:</strong>
-	          <a href="https://www.esp.cs.columbia.edu/" target="_blank">
-	            https://www.esp.cs.columbia.edu/
-	          </a>
+			  This tutorial segment covers the architecture, design flow, and key features of Columbia University’s
+			  agile SoC design platform called <a href="https://www.esp.cs.columbia.edu/" target="_blank">ESP</a>.
+			  The presentation will include a demo for newcomers and a refresher for experienced users.
 	        </p>
 	      </div>
 	    </div>
@@ -434,29 +420,20 @@
 	        </p>
 
 	        <p>
-	          Modern AI systems depend critically on reliable memory
-	          subsystems. This lecture provides an overview of the
-	          RowHammer, RowPress, and ColumnDisturb vulnerabilities,
-	          explaining how these disturbance mechanisms affect contemporary
-	          DRAM technologies. The presentation discusses recent advances
-	          in understanding these phenomena, highlights implications for
-	          AI infrastructure, and advocates principled approaches to
-	          building secure, reliable, and resilient memory systems.
-	          <strong>Recommended Reading:</strong>
-
-		        <ul class="mb-0">
-		          <li>
-		            <a href="https://arxiv.org/abs/2211.07613" target="_blank">
-		              Fundamentally Understanding and Solving RowHammer
-		              (ASP-DAC 2023)
-		            </a>
-		          </li>
-		          <li>
-		            <a href="https://arxiv.org/pdf/1904.09724" target="_blank">
-		              RowHammer: A Retrospective (IEEE TCAD 2019)
-		            </a>
-		          </li>
-		        </ul>
+			  This talk provides an overview of RowHammer, RowPress, and ColumnDisturb vulnerabilities that plague
+			  modern DRAM chips, which form a critical foundation of modern AI and computing infrastructures. We will
+			  cover some cutting-edge DRAM read disturbance research and developments in academia and industry, focusing
+			  on works that rigorously discover and analyze real chip phenomena and open up new problems that require
+			  innovative solutions. We will also discuss what other problems may be lurking in DRAM and other types of
+			  memory, which can threaten the foundations of robust (i.e., secure, safe, reliable, available) systems, as
+			  memory technologies scale to higher densities. We conclude by advocating a principled approach to memory
+			  robustness research that can enable us to better anticipate and prevent such vulnerabilities, as AI and
+			  computing infrastructure rapidly expands into unpredictable and harsh territories.
+			  A short accompanying paper, which appeared at ASP-DAC 2023, can be found here and serves as recommended reading:
+			  <a href="https://arxiv.org/abs/2211.07613" target="_blank">"Fundamentally Understanding and Solving RowHammer"</a>.
+			  A longer paper that provides an overview of the RowHammer problem and research, which appeared at IEEE TCAD
+			  2019, can be found here and serves as recommended reading:
+			  <a href="https://arxiv.org/pdf/1904.09724" target="_blank">"RowHammer: A Retrospective"</a>.
 			</p>
 	      </div>
 	    </div>
@@ -475,13 +452,13 @@
 	        </p>
 
 	        <p>
-	          This presentation reviews prior work on hardware security
-	          support within ESP and introduces recent efforts to integrate
-	          embedded FPGAs (eFPGAs) into the platform. The discussion
-	          highlights how reconfigurable hardware can strengthen system
-	          security through post-fabrication logic updates, physical
-	          isolation of security-sensitive functions, and encrypted
-	          bitstreams that protect valuable intellectual property.
+			  This segment of the tutorial starts with a summary of prior works on security in ESP, followed by an overview of
+			  the recent work on developing an architecture and methodology to integrate embedded FPGAs (eFPGAs) into the ESP,
+			  and a focused discussion on how eFPGAs can enhance hardware security. Specifically, eFPGA reconfigurability allows
+			  security-critical logic (e.g., cryptographic accelerators, PUFs, obfuscation layers) to be updated post-fabrication;
+			  their physical isolation from the main SoC fabric limits attack surfaces; and their bitstream encryption capabilities
+			  can protect sensitive IP. Together, these properties make eFPGAs a compelling building block for adaptive, resilient
+			  security architectures.
 	        </p>
 	      </div>
 	    </div>
@@ -500,13 +477,9 @@
 	        </p>
 
 	        <p>
-	          The concluding technical session examines challenges and
-	          opportunities in developing robust power-management
-	          infrastructures for AI-centric SoCs. The presentation discusses
-	          scalable on-chip power-management architectures, reliability
-	          and security considerations, and several emerging research
-	          directions aimed at building trustworthy, energy-efficient AI
-	          hardware systems.
+			  This final segment of the tutorial brings out the key challenges in robust power management for AI-centric SoCs. It
+			  then describes recent innovations in architecting scalable on-chip power managers. The reliability and security aspects
+			  of such power management systems are touched upon, with pointers to an active research topic area.
 	        </p>
 	      </div>
 	    </div>
